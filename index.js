@@ -34,3 +34,15 @@ function myFind(collection, predicate) {
         }
     }
 }
+function myFilter(collection, predicate) {
+    if (typeof collection === "object") {
+        collection = Object.values(collection); // Convert object values to an array
+    }
+    let arr = [];
+    for (const element of collection) {
+        if (predicate(element)) {
+            arr.push(element); // Add matching elements to the result array
+        }
+    }
+    return arr; // Return the filtered array
+}
