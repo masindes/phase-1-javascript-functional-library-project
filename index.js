@@ -46,3 +46,13 @@ function myFilter(collection, predicate) {
     }
     return arr; // Return the filtered array
 }
+function mySize(collection) {
+    if (typeof collection === "object") {
+        collection = Object.values(collection); // Convert object values to an array
+    }
+    let counter = 0;
+    for (const element of collection) {
+        counter++; // Count each element
+    }
+    return counter; // Return the count
+}
