@@ -67,3 +67,21 @@ function myFirst(array, n) {
         return returnArray; // Return the collected elements
     }
 }
+function myLast(array, n) {
+    if (n === undefined) {
+        return array[array.length - 1]; // Return the last element
+    } else {
+        const returnArray = [];
+        for (let i = array.length - 1; i > array.length - n - 1; i--) {
+            returnArray.unshift(array[i]); // Collect the last `n` elements in reverse order
+        }
+        return returnArray; // Return the collected elements
+    }
+}
+function myKeys(object) {
+    const array = [];
+    for (const key in object) {
+        array.push(key); // Add each key to the array
+    }
+    return array; // Return the array of keys
+}
