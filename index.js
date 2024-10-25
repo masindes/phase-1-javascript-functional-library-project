@@ -34,6 +34,16 @@ function myFind(collection, predicate) {
         }
     }
 }
+function myMap(collection, callback) {
+    if (typeof collection === "object") {
+        collection = Object.values(collection); // Convert object values to an array
+    }
+    for (let i = 0; i < collection.length; i++) {
+        collection[i] = callback(collection[i]); // Apply the callback and update each element
+    }
+    return collection; // Return the new collection
+}
+
 function myFilter(collection, predicate) {
     if (typeof collection === "object") {
         collection = Object.values(collection); // Convert object values to an array
@@ -84,4 +94,11 @@ function myKeys(object) {
         array.push(key); // Add each key to the array
     }
     return array; // Return the array of keys
+}
+function myValues(object) {
+    const array = [];
+    for (const key in object) {
+        array.push(object[key]); // Add each value to the array
+    }
+    return array; // Return the array of values
 }

@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 24,
+    "passes": 27,
     "pending": 0,
-    "failures": 3,
-    "start": "2024-10-25T14:23:54.951Z",
-    "end": "2024-10-25T14:23:56.412Z",
-    "duration": 1461
+    "failures": 0,
+    "start": "2024-10-25T14:27:58.035Z",
+    "end": "2024-10-25T14:27:58.613Z",
+    "duration": 578
   },
   "tests": [
     {
@@ -36,10 +36,7 @@
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:45:25)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myMap is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
@@ -53,10 +50,7 @@
       "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:56:25)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myMap is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -96,7 +90,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -145,14 +139,14 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -187,7 +181,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -196,52 +190,18 @@
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myValues is not defined\n    at Context.<anonymous> (test/indexTest.js:254:14)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myValues is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myValues does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "successfully returns a correctly populated array",
-      "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:45:25)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myMap is not defined"
-      }
-    },
-    {
-      "title": "successfully returns a correctly populated array from modified object values",
-      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:56:25)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myMap is not defined"
-      }
-    },
-    {
-      "title": "retrieves all the values of the object's own properties",
-      "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myValues is not defined\n    at Context.<anonymous> (test/indexTest.js:254:14)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myValues is not defined"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -265,9 +225,23 @@
       "err": {}
     },
     {
+      "title": "successfully returns a correctly populated array",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array from modified object values",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -309,7 +283,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -358,14 +332,14 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -400,6 +374,13 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "retrieves all the values of the object's own properties",
+      "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -407,7 +388,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myValues does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
