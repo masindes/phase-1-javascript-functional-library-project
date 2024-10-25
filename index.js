@@ -56,3 +56,14 @@ function mySize(collection) {
     }
     return counter; // Return the count
 }
+function myFirst(array, n) {
+    if (n === undefined) {
+        return array[0]; // Return the first element
+    } else {
+        const returnArray = [];
+        for (let i = 0; i < n; i++) {
+            returnArray.push(array[i]); // Collect the first `n` elements
+        }
+        return returnArray; // Return the collected elements
+    }
+}
